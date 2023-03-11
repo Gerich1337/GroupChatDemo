@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="06c027d9151b494a9570acc0ebc34abc" Name="Diagram1">
+        <EntityTypeShape EntityType="DemoChatDBModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DemoChatDBModel.ChatMessage" Width="1.5" PointX="7.875" PointY="0.75" />
+        <EntityTypeShape EntityType="DemoChatDBModel.Chatroom" Width="1.5" PointX="5.625" PointY="7.5" />
+        <EntityTypeShape EntityType="DemoChatDBModel.Department" Width="1.5" PointX="3.375" PointY="4.125" />
+        <EntityTypeShape EntityType="DemoChatDBModel.Employee" Width="1.5" PointX="5.625" PointY="3.625" />
+        <EntityTypeShape EntityType="DemoChatDBModel.EmployeesChatrooms" Width="1.5" PointX="7.875" PointY="4" />
+        <AssociationConnector Association="DemoChatDBModel.FK_ChatMessage_Chatroom" />
+        <AssociationConnector Association="DemoChatDBModel.FK_ChatMessage_Employee" />
+        <AssociationConnector Association="DemoChatDBModel.FK_EmployeesChatrooms_Chatroom" />
+        <AssociationConnector Association="DemoChatDBModel.FK_Employee_Department" />
+        <AssociationConnector Association="DemoChatDBModel.FK_EmployeesChatrooms_Employee" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
